@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./css/about-master.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/media.css">
+    <link rel="stylesheet" href="./css/contact.css">
+    <link href="https://fonts.googleapis.com/css?family=Dosis|Kanit|Quicksand&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/cce4d0df7e.js" crossorigin="anonymous"></script>
+    <title>Hair-Kutz</title>
+  </head>
+  <body>
+    <header>
+      <h2>Contact Hair Care</h2>
+    </header>
+
+    <div class="spacer-1"></div>
+
+    <hr style="width: 360px;">
+    <div class="socialIcons">
+      <i class="fab fa-facebook-f facebook"></i>
+      <i class="fab fa-youtube youtube"></i>
+      <i class="fab fa-twitter twitter"></i>
+      <i class="fab fa-linkedin-in linkedin"></i>
+      <i class="fab fa-instagram instagram"></i>
+    </div>
+
+    <div class="spacer-2"></div>
+    <div class="navLinks">
+      <span class="grow"><a href="index.html">home</a></span>
+      <span class="grow"><a href="gallery.html">gallery</a></span>
+      <span class="grow"><a href="contact.html">contact</a></span>
+    </div>
+
+    <div class="contactImg">
+      <img src="http://www.thaspotdancecentre.com/blog/wp-content/uploads/2015/10/Contact_Us.png" alt="">
+    </div>
+
+    <div class="contactForm">
+      <div class="contactFrm">
+          <?php if(!empty($statusMsg)){ ?>
+              <p class="statusMsg <?php echo !empty($msgClass)?$msgClass:''; ?>"><?php echo $statusMsg; ?></p>
+          <?php } ?>
+          <form action="message.php" method="post">
+              <h4>Name</h4>
+              <input type="text" name="name" placeholder="Your Name" required="">
+              <h4>Email </h4>
+              <input type="email" name="email" placeholder="email@example.com" required="">
+              <h4>Subject</h4>
+              <input type="text" name="subject" placeholder="Write subject" required="">
+              <h4>Message</h4>
+              <textarea name="message" placeholder="Write your message here" cols="40" rows="9" maxlength="255" required=""> </textarea> <br>
+              <input type="submit" name="submit" value="Submit">
+              <div class="clear"> </div>
+          </form>
+      </div>
+    </div>
+
+
+    <script type="text/javascript" src="./js/index.js"></script>
+
+  </body>
+</html>

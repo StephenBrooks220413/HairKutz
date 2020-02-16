@@ -1,0 +1,23 @@
+{
+  "name": "webshop",
+  "version": "1.0.0",
+  "description": "barber shop",
+  "main": "index.js",
+  "dependencies": {
+    "choco": "^0.2.1",
+    "babel": "^6.23.0",
+    "lodash": "^4.17.15",
+    "npm": "^6.13.7",
+    "yarn": "^1.22.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "\u0016https://github.com/StephenBrooks220413/barberShop"
+  },
+  "author": "Stephen Brooks",
+  "license": "ISC"
+}
